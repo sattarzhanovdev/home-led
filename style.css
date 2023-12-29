@@ -1,0 +1,109 @@
+body{
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.choose{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.choose button{
+  width: 250px;
+  height: 50px;
+  border-radius: 6px;
+  border: 1px solid black;
+  background: sandybrown;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.back{
+  position: absolute;
+  top: 50px;
+  left: 18px;
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+  background: rebeccapurple;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+.turnOff{
+  width: 340px;
+  height: 50px;
+  background: bisque;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  border: 1px solid black;
+  margin-bottom: 25px;
+}
+
+#canvas {
+  width: auto;
+  height: auto;
+  border: 1px solid #000;
+  border-radius: 50%;
+  cursor: crosshair;
+}
+
+.colors{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.numeral{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.numeral button{
+  width: 50px;
+  height: 35px;
+}
+
+.colors button{
+  width: 50px;
+  height: 50px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.colors button:nth-child(1){
+  background: rgb(214, 77, 250);
+}
+
+.colors button:nth-child(2){
+  background: rgb(103, 77, 250);
+}
+
+.colors button:nth-child(3){
+  background: rgb(251, 46, 41);
+}
+
+.colors button:nth-child(4){
+  background: rgb(45, 72, 249);
+}
+
+.colors button:nth-child(5){
+  background: rgb(0, 249, 38);
+}
+
+.colors button.active{
+  border: 2px solid black;
+}
