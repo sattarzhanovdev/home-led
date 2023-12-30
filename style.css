@@ -58,6 +58,14 @@ body{
   cursor: crosshair;
 }
 
+.brightness{
+  margin-top: 20px;
+}
+
+.brightness input{
+  width: 284px;
+}
+
 .colors{
   display: flex;
   align-items: center;

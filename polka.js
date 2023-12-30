@@ -355,3 +355,18 @@ all.addEventListener('click', e => {
     })
   })
 })
+
+
+const brightness = document.querySelector('.brightness__input')
+
+brightness.addEventListener('input', e => {
+  fetch('https://631afc8ddc236c0b1ee91ae6.mockapi.io/api/v1/value/1', {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      brightness: Number(e.target.value)
+    })
+  })
+})
